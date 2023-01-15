@@ -10,7 +10,7 @@ const Nav = () => {
   const [placement, setPlacement] = React.useState('left')
 
   return (
-    <Flex boxShadow='md' justifyContent={"space-between"}>
+    <Flex boxShadow='md' justifyContent={"space-between"} mb={4}>
       <Button bg={"white"} onClick={onOpen} mt={2}>
         <AiOutlineMenu size={30}></AiOutlineMenu>
       </Button>
@@ -20,7 +20,7 @@ const Nav = () => {
           color={useColorModeValue("white", "white")}   >
           <DrawerHeader borderBottomWidth='1px'>Admin User</DrawerHeader>
           <DrawerBody >
-            <Box  display={"flex"}   _hover={{ color:"skyblue" }}><FaUserFriends />  <Text ml={3} >Users</Text></Box>
+            <Box  display={"flex"} _hover={{ color:"skyblue" }}><FaUserFriends />  <Text ml={3} >Users</Text></Box>
             <br></br>
             <Box  display={"flex"}   _hover={{ color:"skyblue" }}> <BsFillCalendarFill /> <Text ml={3}> Product</Text></Box>
             <br></br>
@@ -33,7 +33,8 @@ const Nav = () => {
         </DrawerContent>
       </Drawer>
 
-      <Box p={2}>
+      <Box p={2} display={"flex"}>
+        <Text m={2} fontWeight="semibold"> Hi Harsh</Text>
         <FaUserCircle size="40" ></FaUserCircle>
       </Box>
     </Flex>
