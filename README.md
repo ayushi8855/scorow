@@ -7,6 +7,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 In the project directory, you can run:
 
 ### `npm start`
+![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/97507160/212562612-e85ea84e-8eaf-4291-89a9-bbd90ca9605f.gif)
 
 
-![ezgif com-gif-maker](https://user-images.githubusercontent.com/97507160/212562241-f5be829b-ab64-4d71-8c97-240c4924a0e5.gif)
