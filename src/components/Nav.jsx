@@ -1,16 +1,16 @@
-import { Button, Drawer, DrawerBody, DrawerContent, DrawerHeader, DrawerOverlay, Text, useDisclosure , useColorModeValue, Box,} from '@chakra-ui/react'
+import { Button, Drawer, DrawerBody, DrawerContent, DrawerHeader, DrawerOverlay, Text, useDisclosure , useColorModeValue, Box, Flex,} from '@chakra-ui/react'
 import React from 'react'
 import { AiOutlineMenu } from "react-icons/ai";
-import {FaUserFriends} from "react-icons/fa"
+import {FaUserCircle, FaUserFriends} from "react-icons/fa"
 import {BsFillCalendarFill , BsFillCartFill} from "react-icons/bs"
 const Nav = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
     const [placement, setPlacement] = React.useState('left')
   
   return (
-    <Box boxShadow='md'>
-         <Button bg={"white"} onClick={onOpen}>
-           <AiOutlineMenu></AiOutlineMenu>
+    <Flex boxShadow='md' justifyContent={"space-between"}>
+         <Button bg={"white"} onClick={onOpen} mt={2}>
+           <AiOutlineMenu size={30}></AiOutlineMenu>
       </Button>
       <Drawer placement={placement} onClose={onClose} isOpen={isOpen} >
         {/* <DrawerOverlay /> */}
@@ -30,7 +30,11 @@ const Nav = () => {
           </DrawerBody>
         </DrawerContent>
       </Drawer>
-    </Box>
+
+      <Box p={2}>
+        <FaUserCircle size="40" ></FaUserCircle>
+      </Box>
+    </Flex>
   )
 }
 
